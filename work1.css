@@ -1,0 +1,119 @@
+/* === WORKS個別ページ === */
+#detail1 {
+ grid-area: d1;
+}
+
+#detail2 {
+ grid-area: d2;
+}
+
+#detail3 {
+ grid-area: d3;
+ display: flex;
+ gap: 24px;
+ align-items: center;
+ justify-content: center;
+}
+
+#detail3 div {
+ display: flex;
+ gap: 10px;
+}
+
+#detail3-right {
+ width: 60%;
+}
+
+.sample-color {
+ display: inline-block;
+ width: 90px;
+ height: 90px;
+ border-radius: 50px;
+ border: #fdf7de solid 1px;
+}
+
+#left {
+ background-color: #181818;
+}
+
+#right {
+ background-color: #FF4117;
+}
+
+#detail4 {
+ grid-area: d4;
+ display: flex;
+ gap: 24px;
+ align-items: center;
+ justify-content: center;
+}
+
+#detail4-left {
+ width: 60%;
+}
+
+#detail4-right {
+ width: 30%;
+}
+
+#detail5 {
+ grid-area: d5;
+ margin-bottom: 100px;
+}
+
+#detail5 img {
+ display: block;
+ margin: 0 auto;
+}
+
+.design-detail-index {
+ margin-top: 0;
+}
+
+.design-detail-index::before {
+ content: "●";
+ margin-right: 8px;
+}
+
+#footer-works {
+ margin: 0 auto;
+ padding: 70px;
+ background-color: rgba(0, 20, 65, .8);
+ width: 100%;
+ z-index: 100;
+}
+
+@media screen and (max-width: 767px) {
+.works-content {
+ column-gap: 10px; 
+}
+
+#detail3-right {
+ width: 70%;
+}
+
+#detail3-left {
+ display: flex;
+ flex-direction: column;
+}
+
+.sample-color {
+ display: inline-block;
+ width: 55px;
+ height: 55px;
+}
+
+#detail4 {
+ display: block;
+}
+
+#detail4-left {
+ width: 100%;
+}
+
+#detail4-right {
+ width: 90%;
+ height: auto;
+ margin: 0 auto;
+}
+}

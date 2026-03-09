@@ -1,0 +1,132 @@
+*, *::before, *::after {
+ box-sizing: border-box;
+}
+
+html {
+ background-image: url(img/andy-holmes-rCbdp8VCYhQ-unsplash.jpg);
+ background-attachment: fixed;
+ background-size: cover;
+}
+
+body {
+ margin: 0;
+ position: relative;
+}
+
+p, h4, dt, dd {
+ color: #fefae9;
+ font-family: "Zen Kaku Gothic Antique", sans-serif;
+ font-weight: 300;
+ font-style: normal;
+}
+
+h2 {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ gap: 12px;
+ width: 100%;
+ font-family: "Forum", serif;
+ font-weight: lighter;
+ font-size: 40px;
+ letter-spacing: .2rem;
+ color: #fefae9;
+ padding: 30px 0;
+}
+
+li {
+ list-style: none;
+}
+
+a {
+ transition: opacity .3s;
+ text-decoration: none;
+ color: #fefae9;
+}
+
+img {
+ max-width: 100%;
+}
+
+/* SPのヘッダー、ナビゲーションメニュー */
+
+.toggle_btn {
+ background: transparent;
+ border: none;
+ position: absolute;
+ right: 25px;
+ top: 50%;
+ transform: translateY(-50%);
+ width: 30px;
+ height: 20px;
+ z-index: 20;
+}
+
+.toggle_btn span {
+ position: absolute;
+ width: 100%;
+ height: 2px;
+ background: #fefae9;
+ border-radius: 30px;
+ left: 0;
+ transition: 0.3s;
+}
+
+.open .toggle_btn span:nth-child(1) {
+ transform: translate(0, 4px) rotate(-45deg);
+}
+
+.open .toggle_btn span:nth-child(2) {
+ transform: translate(0, -4px) rotate(45deg);
+}
+
+.toggle_btn span:nth-child(1) {
+ top: 5px;
+}
+
+.toggle_btn span:nth-child(2) {
+ top: 13px;
+}
+
+#nav-sp {
+ position: fixed;
+ top: 0;
+ left: -100%;
+ width: 300px;
+ padding: 36px 50px;
+ transition: 0.4s;
+ opacity: 0;
+ z-index: 20;
+}
+
+#nav-sp li {
+ margin-bottom: 14px;
+ letter-spacing: .2rem;
+}
+
+.open #nav-sp {
+ left: 0;
+ opacity: 1;
+}
+
+#mask {
+ display: none;
+}
+
+.open #mask {
+ display: block;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ height: 100vh;
+ background-color: #000;
+ opacity: .8;
+ z-index: 10;
+}
+
+.copyright {
+ font-size: 10px;
+ text-align: center;
+ color: #fdf7de;
+}

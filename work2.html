@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="WEBデザイナー・コーダーRieferの制作実績ページです。">
+ <title>Riefer|design|WORKS</title>
+ <link rel="stylesheet" href="common.css">
+ <link rel="stylesheet" href="work-common.css">
+ <link rel="stylesheet" href="work2.css">
+</head>
+
+<body>
+ <header id="header-works">
+  <!-- SP用ハンバーガー -->
+  <button class="toggle_btn" aria-label="menu">
+   <span></span>
+   <span></span>
+  </button>
+
+  <!-- SP用ナビ -->
+  <nav id="nav-sp">
+   <ul>
+     <li><a href="top.html#section1">TOP</a></li>
+     <li><a href="top.html#section2">WORKS</a></li>
+     <li><a href="top.html#section3">SKILLS</a></li>
+     <li><a href="top.html#section4">ABOUT</a></li>
+     <li><a href="top.html#section5">CONTACT</a></li>
+   </ul>
+  </nav>
+  <div id="mask"></div>
+
+  <!-- PC用ナビ -->
+  <div id="nav-pc-works">
+   <nav>
+    <ul>
+     <li><a href="top.html#section1">TOP</a></li>
+     <li><a href="top.html#section2">WORKS</a></li>
+     <li><a href="top.html#section3">SKILLS</a></li>
+     <li><a href="top.html#section4">ABOUT</a></li>
+     <li><a href="top.html#section5">CONTACT</a></li>
+    </ul>
+   </nav>
+  </div>
+ </header> 
+
+ <article id="wrapper">
+
+  <!-- FV -->
+  <img src="img/work2-fv.webp" alt="WORKSトップ画像">
+  <div class="container-works">
+   <h2 class="title-works">プロフィールサイト</h2>
+   <p id="overview-title">Overview</p>
+   <div id="overview">
+    <p>自身のポートフォリオを兼ねたプロフィールサイトをしました。デザインから、フルスクラッチでhtml/css/JavaScript/JQueryをコーディングしました。</p>
+   </div>
+  </div>
+
+  <!-- 説明 -->
+  <section class="container-works">
+   <dl class="works-content">
+    <dt>URL：</dt>
+    <dd><a href="">https://www.hogehoge.co.jp</a></dd>
+    <dt>担当業務：</dt>
+    <dd>要件定義、デザイン、使用技術選定、コーディング</dd>
+    <dt>制作時間：</dt>
+    <dd>30時間</dd>
+    <dt>サイトの目的：</dt>
+    <dd>WEB制作スキルを証明できるポートフォリオサイト</dd>
+    <dt>デザインについて：</dt>
+    <dd class="design-detail">
+      <div class="design-grid">
+        <div id="detail1" class="design-content">
+          <p class="design-detail-index">情報設計</p>
+          <p>見た人が「3分以内にスキル・人物像を把握できる」構成を意識しコンテンツを選定、優先順位をつけて情報を配置。</p>
+          <img src="img/work2_img1.png" alt="制作過程1">
+        </div>
+        <div id="detail2" class="detail-content">
+          <p class="design-detail-index">コンセプト決定</p>
+          <div>
+            <p>テーマは「論理」×「感性」。<br>情報構造は論理的に整理しつつ、配色・タイポグラフィ・モチーフから感性を演出。</p>
+            <img src="img/work2_img2.png" alt="制作過程2">
+          </div>
+        </div>
+        <div id="detail3" class="detail-content">
+          <div id="detail3-left">
+            <img src="img/work2_img3.png" alt="FV星座イメージ">
+          </div>
+          <div id="detail3-right">
+            <p>FVの星座はPCだとマウスオンで仄かに瞬くよう設計。<br>閲覧しているデバイスのサイズが変わっても星座がずれたりしないよう、SVGファイルを用いて再現性を維持しました。</p>
+          </div>
+        </div>
+        <div id="detail4" class="detail-content">
+          <p class="design-detail-index">ワイヤーフレーム製作</p>
+          <p>スマホ端末での閲覧が多いトレンドにキャッチアップするために、「モバイルファースト」のサイト設計に挑戦。TOPページはPC・スマホ共用デザインとすることで、レスポンシブ設計の工数を減らし、コーディング工程を効率化しました。</p>
+          <img src="img/work2_img4-1.webp" alt="モバイルファースト説明">
+        </div>
+        <div id="detail5" class="detail-content">
+          <div id="detail5-left">
+            <img src="img/work2_img5.webp" alt="PCナビゲーション説明">
+          </div>
+          <div id="detail5-right">
+            <p>PCでは画面幅の余白にナビゲーションメニューを設置し、各コンテンツにアクセスしやすいUIにしました。</p>
+          </div>
+        </div>
+        <div id="detail6" class="design-content">
+          <p>WORKの個別ページは情報量が多く、PCで見たときにスマホ幅だとやや見ずらいことが想定されたためPC・スマホでレイアウトを分けています。</p>
+          <img id="detail6-pc" src="img/works6-1img.webp" alt="レスポンシブ説明">
+        </div>
+      </div>
+    </dd>
+   </dl>
+  </section>
+ </article>
+
+ <footer id="footer-works">
+  <div class="copyright">&copy;Riefer Design</div>
+ </footer>
+ <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+ <script src="main.js"></script>
+</body>
+
+</html>

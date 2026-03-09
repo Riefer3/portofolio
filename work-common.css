@@ -1,0 +1,225 @@
+/* === WORKS個別ページ === */
+/* WORKS共通設定 */
+#zoomback {
+ position: fixed;
+ top: 0;
+ width: 100vw;
+ height: 100vh;
+ background-color: rgba(0, 0, 0, .8);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ display: none;
+}
+
+#zoomimg {
+ width: 50%;
+}
+
+h2 {
+ letter-spacing: .1rem;
+}
+
+#header-works {
+ position: fixed;
+ top: 0;
+ width: 100%;
+ height: 60px;
+ z-index: 100;
+ background-color: rgba(0, 20, 65, .8);
+}
+
+#nav-pc-works {
+ position: fixed;
+ top: 0;
+ left: 50%;
+ transform: translateX(-50%);
+ width: 100%;
+ max-width: 800px;
+}
+
+#nav-pc-works nav {
+ justify-content: end;
+}
+
+#nav-pc-works ul {
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+}
+
+#nav-pc-works ul li {
+ margin-left: 10px;
+}
+
+/* SPナビ */
+.toggle_btn {
+ background: transparent;
+ border: none;
+ position: absolute;
+ right: 25px;
+ top: 50%;
+ transform: translateY(-50%);
+ width: 30px;
+ height: 20px;
+ z-index: 20;
+}
+
+.toggle_btn span {
+ position: absolute;
+ width: 100%;
+ height: 2px;
+ background: #fefae9;
+ border-radius: 30px;
+ left: 0;
+ transition: 0.3s;
+}
+
+.open .toggle_btn span:nth-child(1) {
+ transform: translate(0, 4px) rotate(-45deg);
+}
+
+.open .toggle_btn span:nth-child(2) {
+ transform: translate(0, -4px) rotate(45deg);
+}
+
+.toggle_btn span:nth-child(1) {
+ top: 5px;
+}
+
+.toggle_btn span:nth-child(2) {
+ top: 13px;
+}
+
+#nav-sp {
+ position: fixed;
+ top: 0;
+ left: -100%;
+ width: 300px;
+ padding: 36px 50px;
+ transition: 0.4s;
+ opacity: 0;
+ z-index: 20;
+}
+
+#nav-sp li {
+ margin-bottom: 14px;
+ letter-spacing: .2rem;
+}
+
+.open #nav-sp {
+ left: 0;
+ opacity: 1;
+}
+
+#mask {
+ display: none;
+}
+
+.open #mask {
+ display: block;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ height: 100vh;
+ background-color: #000;
+ opacity: .8;
+ z-index: 10;
+}
+
+/* コンテンツ幅 */
+#wrapper {
+ max-width: 800px;
+ margin: 0 auto;
+ margin-top: 60px;
+ background-color: rgb(0, 20, 65, .8);
+}
+
+.container-works {
+ padding: 0 25px;
+}
+
+/* overview */
+#overview {
+ margin: 0 20px 50px 20px;
+ padding: 20px;
+ border-radius: 15px;
+ border: #fdf7de solid 1px;
+}
+
+#overview-title {
+ letter-spacing: .2rem;
+ font-size: 14px;
+ padding-left: 30px;
+}
+
+/* 基本情報 */
+.works-content {
+ margin: 0;
+ display: grid;
+ grid-template-columns: max-content 1fr;
+ column-gap: 40px;
+ row-gap: 12px;
+}
+
+.works-content dt {
+ font-weight: bold;
+ white-space: nowrap;
+}
+
+.works-content dd {
+ margin: 0;
+}
+
+.works-content dt:nth-of-type(5), .works-content dd.design-detail {
+ grid-column: 1 / -1;
+}
+
+.design-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 48px 40px;
+ grid-template-areas: 
+ "d1 d1"
+ "d2 d2"
+ "d3 d3"
+ "d4 d4"
+ "d5 d5";
+}
+
+#footer-works {
+ margin: 0 auto;
+ padding: 70px;
+ background-color: rgba(0, 20, 65, .8);
+ width: 100%;
+ z-index: 100;
+}
+
+@media screen and (max-width: 767px) {
+#nav-pc-works {
+ display: none;
+}
+
+h2 {
+ font-size: 24px;
+ margin: 0;
+ letter-spacing: normal;
+}
+
+#overview {
+ margin: 0 0 50px 0;
+}
+
+#overview p {
+ margin: 0;
+}
+}
+
+@media screen and (min-width: 768px) {
+ .toggle_btn {
+  display: none;
+}
+}
+
+/* ここまで基本情報 */

@@ -1,0 +1,44 @@
+/* === WORKS3個別ページ === */
+.detail-list li {
+ list-style: disc;
+}
+
+.design-grid {
+ grid-template-columns: 1fr;
+ gap: 20px;
+ grid-template-areas: 
+ "d1"
+ "d2";
+}
+
+#detail1 {
+ grid-area: d1;
+}
+
+#detail2 {
+ grid-area: d2;
+ margin-bottom: 20px;
+}
+
+#detail3 {
+ grid-area: d3;
+ display: flex;
+ gap: 24px;
+ align-items: center;
+ justify-content: center;
+}
+
+.design-detail-index {
+ margin-top: 0;
+}
+
+.design-detail-index::before {
+ content: "●";
+ margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+.works-content {
+ column-gap: 10px; 
+}
+}

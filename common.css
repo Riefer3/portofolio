@@ -4,10 +4,7 @@
 
 body {
  margin: 0;
- background-image: url(img/backgroundImage.webp);
- background-size: cover;
- background-position: center;
- background-repeat: no-repeat;
+ background-image: url(img/backgroundImage.webp) center / cover no-repeat;
  position: relative;
 }
 
